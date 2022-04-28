@@ -21,16 +21,15 @@ As a developer, I can ensure that all blog posts have titles and content for eac
 As a developer, I can ensure that all blog post titles are unique.
 As a developer, I can ensure that blog post titles are at least 10 characters.
 
-```
-rails new blog_post_challenge -d postgresql -T
-cd blog_post_challenge
-rails db:create
+`rails new full-stack-ds-tt -d postgresql -T`
+`cd full-stack-ds-tt`
+`rails db:create`
 
-bundle add rspec-rails
-rails generate rspec:install
-$ rails generate model BlogPost title:string content:string
-$ rails db:migrate
-$ rails generate controller BlogPost
-$ rails db:migrate
+`bundle add rspec-rails`
+`rails generate rspec:install`
+`rails generate model BlogPost title:string content:string`
+`rails db:migrate`
+`rails generate controller BlogPost`
+`rails db:migrate`
 
 
