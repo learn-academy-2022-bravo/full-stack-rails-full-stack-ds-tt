@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   get 'posts' => 'blog_post#index', as: 'blog_posts'
-  # root "blog_post#index"
+  get 'posts/:id' => 'blog_post#show', as: 'post'
+  root "blog_post#index"
 end
