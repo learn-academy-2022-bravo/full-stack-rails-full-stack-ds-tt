@@ -20,7 +20,16 @@ As a user, I can see all the blog titles listed on the home page of the applicat
 </ul>
 ```
 As a user, I can click on the title of a blog and be routed to a page where I see the title and content of the blog post I selected.
-
+```index.html.erb
+<h1>Blog App</h1>
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+         <%= link_to post.title, blog_posts_path(post) %>
+    </li>
+  <% end %>
+</ul>
+```
 As a user, I can navigate from the show page back to the home page.
 As a user, I see a form where I can create a new blog post.
 As a user, I can click a button that will take me from the home page to a page where I can create a blog post.
